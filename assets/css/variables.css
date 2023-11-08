@@ -1,0 +1,20 @@
+:root {
+
+    /* --primary-font: 'Roboto', sans-serif; */
+    --primary-font: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --primary-color:#777777;
+    --secondary-color: #212529;
+    --dark-color:#5C636A;
+    --gray-color:#EEEEEE;
+    --info-color:#0D6EFD;
+    --success-color:#198754;
+
+    --primary-text-color:#6C757D;
+    --secondary-text-color:var(--dark-color);
+
+    --size-2xl:50px;
+    --size-xl:40px;
+    --size-lg:32px;
+    --size-md:20px;
+    --size-sm:16px
+}

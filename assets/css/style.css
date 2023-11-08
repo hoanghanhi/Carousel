@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main{
+
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    padding: 0 12px;
+}
+
+#nav{
+    display: inline-block;
+    height: 40px;
+}
+
+#nav{
+    list-style-type: none;
+}
+
+#nav>li{
+    display: inline-block;
+}
+#nav li{
+    position: relative;
+}
+#nav>li>a{
+    color: white;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 40px;
+    padding: 8px;
+    display: block;
+    font-weight: 300;
+}
+#nav-brand{
+    font-size: 20px;
+    font-weight: 400!important;
+}
+#header .search{
+    float: right;
+    padding: 6px 12px;
+}
+#nav-item{
+    opacity: .25;
+}
+.search{
+  
+}
+#header .search-btn{
+    display: inline-block;
+    width: 73px;
+    height: 40px;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: #198754;
+    border-color: #198754;
+    border-radius: 0.375rem;
+    padding: 6px 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+#header .search-btn:hover {
+    background-color:#198754;
+    cursor: pointer;
+    color: white;
+}
+#header #input-search{
+    width: 207px;
+    height: 38px;
+    border-radius: 0.375rem;
+    margin-right: 0.5rem;
+    padding: 6px 12px;
+    
+}
+
+#slider {
+    position: absolute;
+    height: 512px;
+    width: 100%;
+    top: 56px;
+    background-color: #5a5a5a;
+
+}
+
+#slider #text-content{
+    position: absolute;
+    left: 15%;
+    color: #fff;
+    bottom: 3rem;
+    /* padding-top: 1.25rem;
+    padding-bottom: 1.25rem; */
+    padding: 20px;
+}
+
+#slider #text-content h1{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#slider #text-content p{
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+#slider #text-content .slider-btn{
+    height: 48px;
+    padding: 8px 16px;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    background-color: #0d6efd;
+    color: #fff;
+
+}
+
+#slider #text-content .slider-btn:hover{
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+#slider #btn-control{
+    
+}
+#slider .btn-control{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    font-size: 32px;
+    transform: translateY(-50%);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 15%;
+    height: 100%;
+    background: none;
+    
+}
+
+#slider .btn-control-prev{
+    left: 0;
+}   
+#slider  .btn-control-next{
+    right: 0;
+}  
+
+#content {
+    position: absolute;
+    top: 650px;
+    margin: 0 104px;
+    padding: 0 12px ;
+}
+
+#heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.heading{
+    /* float: left;
+    width: 33.33%; */
+    text-align: center;
+}
+
+.heading svg{
+    border-radius: 50%;
+}
+
+.heading h2{
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-size: 32px;
+    color: #5a5a5a;
+}
+
+.heading p{
+    margin: 0 12px 16px 12px;
+
+}
+.heading .btn-secondary{
+    display: inline-block;
+    color: #fff;
+    
+    background: #6c757d;
+    border-color: #6c757d;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    padding: 6px 12px;
+    border-width: 1px;
+    height: 38px;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.heading .btn-secondary:hover{
+    color: #fff;
+    background: #5c636a;
+    border-color: #565e64;
+
+}
+
+.featurette-divider{
+    margin: 80px 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    opacity: .25;
+}
+#feature{
+    display: flex;
+}
+.feature-text{
+    flex-grow: 1;
+    padding: 0 12px;
+}
+.feature-text h2{
+    color: #6c757d;
+    font-size: 50px;
+    letter-spacing: -.05rem;
+    line-height: 1;
+    font-weight: 400;
+    margin: 112px 0 8px 0;
+}
+.feature-text p{
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.feature-image{
+    flex-basis: 475px;
+    padding: 0 12px;
+}
+.footer{
+    display: flex;
+    
+}
+.float-end{
+    
+    
+}

@@ -1,0 +1,12 @@
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--primary-font);
+    margin-bottom: 64px;
+    font-size: var(--size-sm);
+}
+.main-footer p,
+.main-footer a {
+    line-height: 24px;
+}

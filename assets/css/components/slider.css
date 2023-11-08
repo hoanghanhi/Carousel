@@ -1,0 +1,69 @@
+.main-content {
+  font-family: var(--primary-font);
+}
+
+.slider-wrap {
+  padding-top: 50px;
+}
+
+.slider {
+  height: 512px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.slider-info {
+  /* min-width: 804.18px; */
+  width: 70%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.btn-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+}
+.btn-control {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  
+  cursor: pointer;
+}
+
+.page-heading {
+  font-family: var(--primary-font);
+  font-size: var(--size-xl);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.page-desc {
+  font-family: var(--primary-font);
+  font-size: var(--size-md);
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.slider-btn {
+  height: 48px;
+  padding: 8px 16px;
+  font-family: var(--primary-font);
+  font-size: var(--size-md);
+  background-color: var(--info-color);
+  border: 1px solid var(--info-color);
+  color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+  line-height: 1.5;
+}
