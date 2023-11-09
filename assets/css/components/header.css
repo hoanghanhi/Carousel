@@ -14,11 +14,26 @@
   justify-content: space-between;
   padding: 0 12px;
 }
-
+nav {
+  display: flex;
+  align-items: center;
+}
+.nav-toggler {
+  display: none;
+}
+.brand {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 16px;
+  font-size: var(--size-md);
+  font-weight: 400;
+  padding: unset;
+}
 .links {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .link-item {
@@ -28,31 +43,35 @@
   font-size: var(--size-sm);
 }
 
-.link:nth-child(1) > .link-item {
-  margin-right: 16px;
-  font-size: var(--size-md);
-  font-weight: 400;
-  padding: unset;
-}
-
 .link:nth-child(2) > .link-item {
-}
-
-.link:nth-child(3) > .link-item {
   color: #ffffff8c;
 }
 
-.link:nth-child(4) > .link-item {
+.link:nth-child(2) > .link-item:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.link:nth-child(3) > .link-item {
   color: #5a5a5a;
   cursor: default;
   
   
 }
 
-.form-search {
-    display: flex;
-    gap: 8px;
+.form-search-item {
+  position: absolute;
+  right: 0;
 }
+
+
+.form-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  margin-right: 12px;
+  gap: 8px;
+}
+
 
 .search {
     width: 181px;
@@ -83,3 +102,67 @@
     cursor: pointer;
     transition: 0.3s linear;
 }
+
+@media only screen and (max-width: 768px) {
+  .nav-toggler {
+    display: flex;
+    float: right;
+  }
+  
+  .links {
+    display: none;
+  }
+
+  .navigation.responsive {position: relative;}
+  .navigation.responsive ul, .navigation.responsive .form-search{
+    display: block;
+    text-align: left;
+  }
+
+
+  .navigation.responsive ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 250%;
+    background-color: var(--secondary-color);
+    padding-bottom: 8px;
+  }
+  
+  .navigation.responsive .form-search-item {
+    position: absolute;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    
+  }
+  .navigation.responsive .form-search {
+    margin-left: 8px;
+  }
+  
+  .navigation.responsive .link-item {
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--size-sm);
+  }
+
+
+  .navigation.responsive .link:nth-child(2) > .link-item {
+    color: #ffffff8c;
+  }
+  
+  .navigation.responsive .link:nth-child(2) > .link-item:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .navigation.responsive .link:nth-child(3) > .link-item {
+    color: #5a5a5a;
+    cursor: default;
+  }
+
+}
+  
+
+

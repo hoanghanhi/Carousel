@@ -16,7 +16,6 @@
 }
 
 .slider-info {
-  /* min-width: 804.18px; */
   width: 70%;
   align-self: flex-end;
   display: flex;
@@ -36,8 +35,12 @@
   border: none;
   color: #fff;
   font-size: 32px;
-  
   cursor: pointer;
+}
+.slider-btn:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
 }
 
 .page-heading {
@@ -66,4 +69,16 @@
   border-radius: 7px;
   cursor: pointer;
   line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-heading {
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  .page-desc {
+    font-size: 1rem;
+  }
+  .page-heading, .page-desc  {
+    text-align: center;
+  }
 }

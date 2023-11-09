@@ -13,20 +13,23 @@
 <body>
     <!-- <div id="main"> -->
     <header class="main-header">
-        <section class="navigation">
+        <section class="navigation" id="nav">
             <nav>
+                <a href="#" class="brand">Carousel</a>
                 <ul class="links">
-                    <li class="link"><a href="#" class="link-item">Carousel</a></li>
+                    <!-- <li class="link"><a href="#" class="link-item">Carousel</a></li> -->
                     <li class="link"><a href="#" class="link-item">Home</a></li>
                     <li class="link"><a href="#" class="link-item">Link</a></li>
                     <li class="link"><a href="#" class="link-item" disable>Disabled</a></li>
+                    <li class=" form-search-item">
+                        <form class="form-search">
+                            <input class="search" type="text" placeholder="Search">
+                            <button class="btn search-btn" type="submit">Search</button>
+                        </form>
+                    </li>
                 </ul>
             </nav>
-
-            <form class="form-search">
-                <input class="search" type="text" placeholder="Search">
-                <button class="btn search-btn" type="submit">Search</button>
-            </form>
+            <button class="nav-toggler" type="button" onclick="myFunction()"><i class="fa fa-bars"></i></button>
         </section>
     </header>
 
@@ -84,9 +87,7 @@
                 <p class="featurette-desc">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
             </div>
             <div class="featurette-image-wrap">
-                <div class="featurette-image">
-                    <p class="featurette-image-text">500x500</p>
-                </div>
+                <svg class="featurette-image" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".6em">500x500</text></svg>
             </div>
         </section>
 
@@ -100,9 +101,7 @@
                 <p class="featurette-desc">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
             </div>
             <div class="featurette-image-wrap">
-                <div class="featurette-image">
-                    <p class="featurette-image-text">500x500</p>
-                </div>
+                <svg class="featurette-image" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".6em">500x500</text></svg>
             </div>
         </section>
 
@@ -116,124 +115,29 @@
                 <p class="featurette-desc">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
             </div>
             <div class="featurette-image-wrap">
-                <div class="featurette-image">
-                    <p class="featurette-image-text">500x500</p>
+                <div class="featurette-image-wrap">
+                    <svg class="featurette-image" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".6em">500x500</text></svg>
                 </div>
             </div>
         </section>
 
         <hr class="driver" />
-        <!-- <div id="content">
-            <div id="heading">
-                <div class="heading">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
-                            dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Heading</h2>
-                    <p>Some representative placeholder content for the three columns of text below the carousel. This is
-                        the first column.</p>
-                    <p><a class="btn-secondary" href="#">View details >></a></p>
-                </div>
-                <div class="heading">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
-                            dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Heading</h2>
-                    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
-                        second column.</p>
-                    <p><a class="btn-secondary" href="#">View details >></a></p>
-                </div>
-                <div class="heading">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
-                            dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Heading</h2>
-                    <p>And lastly this, the third column of representative placeholder content.</p>
-                    <p><a class="btn-secondary" href="#">View details >></a></p>
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div id="feature">
-                <div class="feature-text">
-                    <h2>First featurette heading. It’ll blow your mind.</h2>
-                    <p>Some great placeholder content for the first featurette here. Imagine some exciting prose here.
-                    </p>
-                </div>
-                <div class="feature-image">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="451"
-                        height="451" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div id="feature">
-                <div class="feature-image">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="451"
-                        height="451" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
-                </div>
-                <div class="feature-text">
-                    <h2>Oh yeah, it’s that good. See for yourself.</h2>
-                    <p>Another featurette? Of course. More placeholder content here to give you an idea of how this
-                        layout would work with some actual real-world content in place.</p>
-                </div>
-
-            </div>
-            <hr class="featurette-divider">
-            <div id="feature">
-                <div class="feature-text">
-                    <h2>And lastly, this one. Checkmate.</h2>
-                    <p>And yes, this is the last block of representative placeholder content. Again, not really intended
-                        to be actually read, simply here to give you a better view of what this would look like with
-                        some actual content. Your content.</p>
-                </div>
-                <div class="feature-image">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="451"
-                        height="451" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
-                </div>
-            </div>
-            <hr class="featurette-divider">
-            <div class="footer">
-                <p>
-                    © 2017–2022 Company, Inc. ·
-                    <a href="#">Privacy</a>
-                    .
-                    <a href="#">Terms</a>
-                </p>
-                <p class="float-end"><a href="#">Back to top</a></p>
-            </div>
-        </div> -->
     </main>
 
     <footer class="main-footer container">
         <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-        <a href="">Back to top</a>
+        <a href="" >Back to top</a>
     </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "navigation") {
+                x.className += " responsive";
+            } else {
+                x.className = "navigation";
+            }
+        }
+    </script>
 </body>
 
 </html>
